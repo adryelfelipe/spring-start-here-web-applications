@@ -1,4 +1,11 @@
-package creatingDynamicViewsUsingThymeleaf.usingPathVariable;
+package chapter08.dynamicViewsUsingPathVariable;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
 public class MainPathVariable {
+    public static void main(String[] args) {
+        SpringApplication.run(MainPathVariable.class);
+    }
 }
