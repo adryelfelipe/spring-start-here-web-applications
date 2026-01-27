@@ -1,4 +1,4 @@
-package chapter08.dynamicViewsUsingPathVariable;
+package chapter08.dynamicViewsUsingPathVariable.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

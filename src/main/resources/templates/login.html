@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle at top left, #4f46e5, #0f172a);
+        }
+
+        .card {
+            width: 100%;
+            max-width: 400px;
+            padding: 40px 35px;
+            border-radius: 16px;
+            backdrop-filter: blur(18px);
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+            color: white;
+            animation: fadeIn 0.6s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        .input-group {
+            margin-bottom: 18px;
+        }
+
+        label {
+            font-size: 14px;
+            opacity: 0.85;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px 14px;
+            border-radius: 10px;
+            border: 1px solid rgba(255,255,255,0.2);
+            background: rgba(255,255,255,0.1);
+            color: white;
+            font-size: 14px;
+            transition: 0.2s;
+        }
+
+        input::placeholder {
+            color: rgba(255,255,255,0.6);
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #818cf8;
+            background: rgba(255,255,255,0.15);
+            box-shadow: 0 0 0 3px rgba(129,140,248,0.25);
+        }
+
+        .btn {
+            width: 100%;
+            margin-top: 10px;
+            padding: 12px;
+            border-radius: 10px;
+            border: none;
+            font-weight: 600;
+            font-size: 15px;
+            color: white;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            cursor: pointer;
+            transition: transform 0.05s ease, box-shadow 0.2s ease;
+        }
+
+        .btn:hover {
+            box-shadow: 0 10px 25px rgba(99,102,241,0.4);
+        }
+
+        .btn:active {
+            transform: scale(0.97);
+        }
+
+        .message {
+            margin-top: 18px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 500;
+            color: #fca5a5;
+            min-height: 20px;
+        }
+
+        .footer {
+            margin-top: 22px;
+            text-align: center;
+            font-size: 12px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>Bem-vindo 👋</h2>
+
+    <form th:action="@{/}" method="post">
+        <div class="input-group">
+            <label for="username">Nome</label>
+            <input type="text" id="username" name="username" placeholder="Seu usuário" required>
+        </div>
+
+        <div class="input-group">
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" placeholder="••••••••" required>
+        </div>
+
+        <button type="submit" class="btn">Entrar</button>
+    </form>
+
+    <!-- Mensagem dinâmica -->
+    <div class="message" th:text="${message}"></div>
+
+    <div class="footer">
+        Sistema seguro • Acesso restrito
+    </div>
+</div>
+
+</body>
+</html>

@@ -11,6 +11,11 @@ public class Product {
         this.name = name;
     }
 
+    // Empty constructor
+    public Product() {
+
+    }
+
     // Getters and Setters
     public String getName() {
         return name;

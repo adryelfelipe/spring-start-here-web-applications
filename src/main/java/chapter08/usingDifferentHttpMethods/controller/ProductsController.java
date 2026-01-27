@@ -37,4 +37,9 @@ public class ProductsController {
 
         return "products.html";
     }
+
+    @PostMapping("/testing")
+    public String test(Product product) {
+        return "home.html";
+    }
 }
