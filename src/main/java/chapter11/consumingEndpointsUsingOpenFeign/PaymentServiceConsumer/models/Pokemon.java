@@ -1,4 +1,4 @@
-package chapter11.PaymentServiceConsumer.models;
+package chapter11.consumingEndpointsUsingOpenFeign.PaymentServiceConsumer.models;
 
 public class Pokemon {
     private Integer id;

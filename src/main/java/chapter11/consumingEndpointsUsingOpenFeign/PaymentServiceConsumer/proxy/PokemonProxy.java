@@ -1,6 +1,6 @@
-package chapter11.PaymentServiceConsumer.proxy;
+package chapter11.consumingEndpointsUsingOpenFeign.PaymentServiceConsumer.proxy;
 
-import chapter11.PaymentServiceConsumer.models.Pokemon;
+import chapter11.consumingEndpointsUsingOpenFeign.PaymentServiceConsumer.models.Pokemon;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

@@ -1,6 +1,6 @@
-package chapter11.PaymentServiceApi.controller;
+package chapter11.consumingEndpointsUsingOpenFeign.PaymentServiceApi.controller;
 
-import chapter11.PaymentServiceApi.models.Payment;
+import chapter11.consumingEndpointsUsingOpenFeign.PaymentServiceApi.models.Payment;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;

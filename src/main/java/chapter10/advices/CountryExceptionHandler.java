@@ -1,6 +1,6 @@
-package chapter10.implementingRestServices.advices;
+package chapter10.advices;
 
-import chapter10.implementingRestServices.models.exceptions.CountryNullException;
+import chapter10.models.exceptions.CountryNullException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;

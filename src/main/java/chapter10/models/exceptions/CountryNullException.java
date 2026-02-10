@@ -1,4 +1,4 @@
-package chapter10.implementingRestServices.models.exceptions;
+package chapter10.models.exceptions;
 
 public class CountryNullException extends RuntimeException {
     public CountryNullException() {

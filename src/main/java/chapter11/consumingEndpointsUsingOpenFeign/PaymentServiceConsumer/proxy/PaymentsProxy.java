@@ -1,6 +1,6 @@
-package chapter11.PaymentServiceConsumer.proxy;
+package chapter11.consumingEndpointsUsingOpenFeign.PaymentServiceConsumer.proxy;
 
-import chapter11.PaymentServiceApi.models.Payment;
+import chapter11.consumingEndpointsUsingOpenFeign.PaymentServiceApi.models.Payment;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

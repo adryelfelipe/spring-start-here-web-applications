@@ -1,4 +1,4 @@
-package chapter10.implementingRestServices.models;
+package chapter10.models;
 
 public class Country {
     // Attributes

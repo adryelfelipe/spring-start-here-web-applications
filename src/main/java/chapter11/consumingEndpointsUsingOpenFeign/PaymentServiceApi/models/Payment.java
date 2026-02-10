@@ -1,4 +1,4 @@
-package chapter11.PaymentServiceApi.models;
+package chapter11.consumingEndpointsUsingOpenFeign.PaymentServiceApi.models;
 
 public class Payment {
     // Attributes

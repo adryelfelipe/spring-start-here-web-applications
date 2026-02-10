@@ -1,7 +1,7 @@
-package chapter11.PaymentServiceConsumer.controller;
+package chapter11.consumingEndpointsUsingOpenFeign.PaymentServiceConsumer.controller;
 
-import chapter11.PaymentServiceApi.models.Payment;
-import chapter11.PaymentServiceConsumer.proxy.PaymentsProxy;
+import chapter11.consumingEndpointsUsingOpenFeign.PaymentServiceApi.models.Payment;
+import chapter11.consumingEndpointsUsingOpenFeign.PaymentServiceConsumer.proxy.PaymentsProxy;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

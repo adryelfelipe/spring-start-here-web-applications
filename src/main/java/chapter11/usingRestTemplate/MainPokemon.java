@@ -1,11 +1,11 @@
-package chapter11.PaymentServiceApi;
+package chapter11.usingRestTemplate;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PaymentServiceMain {
+public class MainPokemon {
     public static void main(String[] args) {
-        SpringApplication.run(PaymentServiceMain.class, args);
+        SpringApplication.run(MainPokemon.class);
     }
 }

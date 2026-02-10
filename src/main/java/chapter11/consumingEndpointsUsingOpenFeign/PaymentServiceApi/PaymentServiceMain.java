@@ -1,11 +1,11 @@
-package chapter10.implementingRestServices;
+package chapter11.consumingEndpointsUsingOpenFeign.PaymentServiceApi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MainRestServices {
+public class PaymentServiceMain {
     public static void main(String[] args) {
-        SpringApplication.run(MainRestServices.class);
+        SpringApplication.run(PaymentServiceMain.class, args);
     }
 }

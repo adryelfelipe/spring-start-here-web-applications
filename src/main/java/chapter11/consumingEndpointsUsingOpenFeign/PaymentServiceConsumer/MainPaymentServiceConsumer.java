@@ -1,4 +1,4 @@
-package chapter11.PaymentServiceConsumer;
+package chapter11.consumingEndpointsUsingOpenFeign.PaymentServiceConsumer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

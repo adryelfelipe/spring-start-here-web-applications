@@ -1,7 +1,7 @@
-package chapter11.PaymentServiceConsumer.controller;
+package chapter11.consumingEndpointsUsingOpenFeign.PaymentServiceConsumer.controller;
 
-import chapter11.PaymentServiceConsumer.models.Pokemon;
-import chapter11.PaymentServiceConsumer.proxy.PokemonProxy;
+import chapter11.consumingEndpointsUsingOpenFeign.PaymentServiceConsumer.models.Pokemon;
+import chapter11.consumingEndpointsUsingOpenFeign.PaymentServiceConsumer.proxy.PokemonProxy;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
